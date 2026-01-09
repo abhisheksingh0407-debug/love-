@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Only You ❤️</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;}
+body{
+  overflow:hidden;
+  font-family:'Poppins',sans-serif;
+}
+
+/* PAGES */
+.page{
+  width:100vw;
+  height:100vh;
+  position:absolute;
+  inset:0;
+  display:none;
+  justify-content:center;
+  align-items:center;
+  flex-direction:column;
+  padding:30px;
+  text-align:center;
+}
+.page.active{display:flex;}
+
+.page1{background:linear-gradient(135deg,#ffb3c6,#ffd6e0);}
+.page2{background:linear-gradient(135deg,#cdb4db,#eac4d5);}
+.page3{background:linear-gradient(135deg,#ff8fab,#ffc2d1);}
+
+/* TEXT */
+h1{
+  font-family:'Pacifico',cursive;
+  font-size:3.2rem;
+  color:white;
+  margin-bottom:25px;
+  z-index:5;
+}
+
+.text{
+  font-size:1.2rem;
+  line-height:1.9;
+  color:white;
+  max-width:90%;
+  z-index:5;
+}
+
+/* BUTTON */
+button{
+  margin-top:40px;
+  padding:14px 38px;
+  border:none;
+  border-radius:30px;
+  font-size:1.1rem;
+  font-weight:600;
+  background:white;
+  color:#ff4d6d;
+  z-index:5;
+}
+
+/* FLOATING HEARTS (LIGHT & BACK) */
+.heart{
+  position:absolute;
+  font-size:1.4rem;
+  opacity:0.25;
+  animation:floatUp linear infinite;
+  z-index:1;
+}
+@keyframes floatUp{
+  from{transform:translateY(110vh);}
+  to{transform:translateY(-10vh);}
+}
+
+/* SIDE EMOJIS */
+.side{
+  position:absolute;
+  font-size:2rem;
+  opacity:0.35;
+  z-index:1;
+}
+
+/* POPUP */
+#popup{
+  position:fixed;
+  inset:0;
+  background
